@@ -16,6 +16,7 @@
     "format": "prettier -w .",
     "format:check": "prettier -c .",
     "tailwind": "tailwindcss -i src/styles/globals.css -o src/styles/dist.css",
+    "preinstall": "npx only-allow pnpm",
     "postbuild": "next-sitemap --config next-sitemap.config.js",
     "prepare": "husky install"
   },
@@ -59,15 +60,13 @@
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.6",
     "tailwindcss": "^3.3.3",
+    "tsc-files": "1.1.4",
     "typescript": "^5.2.2"
   },
-  "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": [
-      "eslint --max-warnings=0",
-      "prettier -w"
-    ],
-    "**/*.{json,css,scss,md,webmanifest}": [
-      "prettier -w"
-    ]
+  "engines": {
+    "node": ">=16.15.0",
+    "pnpm": ">=8.9.0",
+    "npm": "Please use pnpm instead of npm",
+    "yarn": "Please use pnpm instead of yarn"
   }
 }
