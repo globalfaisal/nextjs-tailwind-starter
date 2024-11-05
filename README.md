@@ -44,7 +44,7 @@ This repository is 🔋 battery packed with:
 2. Using `create-next-app`
 
    ```bash
-   npx create-next-app -e https://github.com/globalfaisal/ts-nextjs-tailwind-starter project-name
+   npx create-next-app -e https://github.com/globalfaisal/nextjs-tailwind-starter project-name
    ```
 
 3. Deploy to Vercel
